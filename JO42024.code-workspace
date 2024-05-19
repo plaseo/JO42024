@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true,
+		"files.exclude": {
+			"**/.odt": true
+		},
+		"java.project.sourcePaths": [
+			"Week1"
+		]
+	}
+}
