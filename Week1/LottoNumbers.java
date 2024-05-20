@@ -1,3 +1,4 @@
+package Week1;
 
 import java.util.random.RandomGenerator;
 

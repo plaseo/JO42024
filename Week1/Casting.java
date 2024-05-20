@@ -1,3 +1,5 @@
+package Week1;
+
 public class Casting {
     public static void main (String[] args){
     double number = 5.45;
