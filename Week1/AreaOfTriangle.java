@@ -1,3 +1,5 @@
+package Week1;
+
 import java.util.Scanner;
 
 public class AreaOfTriangle {
@@ -7,7 +9,7 @@ public static void main (String[] args){
     //method to get the area of a given triangle
     private static double getAreaOfTriangle(){
     Scanner input = new Scanner(System.in);
-    System.out.print("Enter the base-width of triangble: ");
+    System.out.print("Enter the base-width of triangle: ");
     double baseWidth = input.nextDouble();
     System.out.print("Enter the height of triangle: ");
     double heightTriangle = input.nextDouble();

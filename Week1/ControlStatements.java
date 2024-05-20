@@ -1,3 +1,5 @@
+package Week1;
+
 import java.util.Scanner;
 
 public class ControlStatements {
@@ -6,11 +8,11 @@ public class ControlStatements {
     Scanner input = new Scanner(System.in);
     // prompt user to enter a grade
     System.out.print("Enter a grade: ");
-    chectGrade(input.nextInt());
+    checkGrade(input.nextInt());
     input.close();
     }
 
-    public static void chectGrade(int grade){
+    public static void checkGrade(int grade){
     
         //decision making statement
         //if (condition){body of code that will reun if the conditon is satisfied}

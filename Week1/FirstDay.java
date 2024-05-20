@@ -1,4 +1,4 @@
-
+package Week1;
 // access modifier
 public class FirstDay {
 

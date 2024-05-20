@@ -10,7 +10,8 @@
 			"**/.odt": true
 		},
 		"java.project.sourcePaths": [
-			"Week1"
-		]
+			"."
+		],
+		"java.project.referencedLibraries": []
 	}
 }
