@@ -9,7 +9,7 @@ public class DoubleToIn {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a double: ");
         double userDouble = input.nextDouble();
-        int outInteger = (int)Math.round(userDouble);
+        int outInteger = (int) Math.round (userDouble);
         System.out.println(outInteger);
         input.close();
 
