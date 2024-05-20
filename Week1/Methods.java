@@ -11,7 +11,7 @@ public class Methods {
         int b = input.nextInt();
         int result = addNumbers(a, b);
         System.out.println("The sum is: " + result);
-    
+        input.close();
     }
 
     //methods and functins are synonymous terms

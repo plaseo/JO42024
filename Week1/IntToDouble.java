@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class IntToDouble {
 
     public static void main (String[] args){
+        
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a whole number: ");
         int wholeNumber = input.nextInt();
