@@ -11,9 +11,5 @@ public class CircumferenceCircle {
     double circleCircumference = 2 * 3.14 * radius;
     System.out.println("The circumference of the cirle is: " + circleCircumference);
     input.close();
-
-
-
-
     }
 }
