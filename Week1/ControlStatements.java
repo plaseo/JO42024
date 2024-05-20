@@ -5,8 +5,10 @@ public class ControlStatements {
     // create scanner
     Scanner input = new Scanner(System.in);
     // prompt user to enter a grade
-    System.out.println("Enter a grade: ");
-    int grade = input.nextInt();}
+    System.out.print("Enter a grade: ");
+    chectGrade(input.nextInt());
+    input.close();
+    }
 
     public static void chectGrade(int grade){
     
