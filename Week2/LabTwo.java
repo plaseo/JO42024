@@ -5,6 +5,9 @@ public class LabTwo {
     public static void main(String[] args) {
         System.out.println("Welcome to Lab TWO!");
         middle3();
+        max3();
+        min3();
+        
     }
     // method to determine the largest of three integers
     public static void max3(){
@@ -36,64 +39,50 @@ public class LabTwo {
     }
     //Method to determine the middle value of three integers
     public static void middle3(){
-        
         Scanner input = new Scanner(System.in);
         System.out.println("Enter three integers :");
         int integerOne = input.nextInt();
         int integerTwo = input.nextInt();
         int integerThree = input.nextInt();
+        int largestInteger = (0);
+        int smallestInteger = (0);
         //determine the largest integer
         if(integerOne >= integerTwo && integerOne >= integerThree){
-            int largestInteger = integerOne;
+            largestInteger = integerOne;
+            System.out.println(largestInteger);
         }else if(integerTwo >= integerOne && integerTwo >= integerThree){
-            int largestInteger = integerTwo;
+            largestInteger = integerTwo;
+            System.out.println(largestInteger);
         }else{
-            int largestInteger = integerThree;
+            largestInteger = integerThree;
+            System.out.println(largestInteger);
         }
-        System.out.println(largestInteger);
-
         //determine the smallest integer
         if(integerOne <= integerTwo && integerOne <= integerThree){
-            int smallestInteger = integerOne;
+            smallestInteger = integerOne;
+            System.out.println(smallestInteger);
         }else if(integerTwo <= integerOne && integerTwo <= integerThree){
-            int smallestInteger = integerTwo;
+            smallestInteger = integerTwo;
+            System.out.println(smallestInteger);
         }else{
-            int smallestInteger = integerThree;
+            smallestInteger = integerThree;
+            System.out.println(smallestInteger);
         }
-        int middleInteger = (integerOne + integerTwo + integerThree) - (largestInteger + smallestInteger);
-        System.out.println("The middle number is " + middleInteger);
+        int middleInteger = integerOne + integerTwo + integerThree - largestInteger - smallestInteger;
+        System.out.println(middleInteger);
     }
-    //Method of xor function
-    // public static void xor();
-    // boolean myWord = true;
-    public static boolean isFactor(int k, int n) {
-        //if there is no remainder return true
-        //return false if there is a remainder
-        if(n % k == 0){
-        return true;
-        }else { return false;}
-    }
-public static boolean isPerfect(int number){
-    int sum = 0;
-    //iterating through an index when created starting from 1 up to the number we received from the code
-    //divided by 2
-    for(int i = 1; i >= number / 2; i++){
-        if(isFactor(i, number)){ //checking to see if the index and the number is a factor. If it is will put the sum of the two numbers.
-            sum = sum + i; //whatever number we got, we will add all of the numbers that are factors to get their sum
-        }//if sum
-    }
-    return sum == number;//if sum is equal to the number then it will return true, if not it will return false
-    
-}
-public static boolean isPrime(){
-    for(int j = 1; j >= number1; j++){
-        if(isFactor(j, number1)){
-
+    public static void xor(){
+        boolean boolOne = false;
+        boolean boolTwo = false;
+        System.out.println("Please input two booleans");
+        Scanner input = new Scanner(System.in);
+        boolOne = input.nextBoolean();
+        boolTwo = input.nextBoolean();
+        //return ((boolOne && !boolTwo) || (!boolOne && boolTwo));
+        if ((boolOne && !boolTwo) || (!boolOne && boolTwo)){
+            System.out.println("True!");
+        }else{
+            System.out.println("Drink some water!");
         }
     }
-    return true;
-
-
-
-}
 }
