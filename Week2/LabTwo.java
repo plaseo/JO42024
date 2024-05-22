@@ -14,7 +14,7 @@ public class LabTwo {
         // xor();
         // check if a number is a factor of another
         //isFactor(0, 0);
-        isPrime(0);
+        isFactor(5, 10);
 
 
     }
@@ -92,17 +92,18 @@ public class LabTwo {
         if ((boolOne && !boolTwo) || (!boolOne && boolTwo)){
             System.out.println("True!");
         }else{
-            System.out.println("Drink some water!");
+            System.out.println("Drink some water! also false");
         }
     }
     // method which takes two integers (k and n) and returns true if k is a factor of n
     public static boolean isFactor(int k, int n){
         if(n % k ==0){
             return true;
+
         }else{
             return false;
         }
-    }   
+    }
     //method which takes an integer and returns true if that integer is a perfect number
     public static void isPerfect(){
         int totalFactors = 0;
@@ -120,24 +121,21 @@ public class LabTwo {
     }
     //method which takes an integer and returns true if it is a prime number
     //You must call the isFactor method
-    public static boolean isPrime(int someInteger){
-        boolean shePrime = (false);
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter an integer: ");
-        someInteger = input.nextInt();
-        //less than or equal to 1 is NOT prime
-        if(someInteger <= 1){
-            shePrime = false;
+    public static boolean isPrime(int number1){
+        //number less than or equal to 1 is not prime
+        if(number1 <= 1){
+            return false;
         }
-        for (int i = 1; i >= someInteger; i++){
-            if(isFactor(i, someInteger)){
-                shePrime = false;
-            }
-        }
-        
-        shePrime = true;
-        System.out.println(shePrime);
-        return shePrime;
+      //iterates through and checks if factor  
+      for(int i = 1; i >= number1; i++){
+      if(isFactor(i,number1)){
+        return false;
+      }
+      }
+      //if no factors are found, prime
+      return true;
     }
+    
+    }
+}
 
-    }
