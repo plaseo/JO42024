@@ -1,4 +1,4 @@
-package Week2.OOP;
+package Week2.OOPEncapsulation;
 
 public class Dog {
     
@@ -11,6 +11,12 @@ public class Dog {
         private String color; 
         private String allergies;
 
+        //constructor
+        public Dog(String name){
+
+        }     
+
+
             //constructor - allows you to create an object
             //allows you to set the initial state of an object
             //empty constructor
@@ -18,11 +24,13 @@ public class Dog {
             }
             //how you make your constructor depends on what resources are needed for the method that the object will be calling
             public Dog(String name, String breed, int age, String gender){
+                
+                //when you see this operator before a variable, it is referring to the instance variable
                 this.name = name;
                 this.breed = breed;
                 this.age = age; 
                 this.gender = gender;
-                
+
             }
 
 
@@ -44,8 +52,12 @@ public class Dog {
             return age;
         }
 
-        public void setAge(int age) {
-            this.age = age;
+        public void setAge(int age){
+            if (age > 0){
+                this.age = age;
+            }else{
+                System.out.println("Invalid age entered. Try again!");
+            }
         }
 
         public String getGender() {
@@ -88,7 +100,7 @@ public class Dog {
         }
 
         public void bark(){
-            System.out.println("Woof Woof");    
+            System.out.println(name + "Woof Woof");    
         }
 
     
