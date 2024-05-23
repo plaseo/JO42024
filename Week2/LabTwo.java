@@ -12,6 +12,7 @@ public class LabTwo {
         System.out.println("5. check if an integer is perfect");
         System.out.println("6. check if an integer is prime");
         System.out.print("Selection: ");
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         int userChoice = input.nextInt();
         if(userChoice == 1){
@@ -42,6 +43,7 @@ public class LabTwo {
     }
     // method to determine the largest of three integers
     public static void max3(){
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Enter three integers :");
         int integerOne = input.nextInt();
@@ -56,6 +58,7 @@ public class LabTwo {
     }
     // method to determine the smallest of three integers
     public static void min3(){
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Enter three integers :");
         int integerOne = input.nextInt();
@@ -70,6 +73,7 @@ public class LabTwo {
     }
     // Method to determine the middle value of three integers
     public static void middle3(){
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Enter three integers :");
         int integerOne = input.nextInt();
@@ -107,6 +111,7 @@ public class LabTwo {
         boolean boolOne = false;
         boolean boolTwo = false;
         System.out.println("Please input two booleans");
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         boolOne = input.nextBoolean();
         boolTwo = input.nextBoolean();
@@ -129,6 +134,7 @@ public class LabTwo {
     //method which takes an integer and returns true if that integer is a perfect number
     public static void isPerfect(){
         int totalFactors = 0;
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Enter any integer");
         int userInteger = input.nextInt();
