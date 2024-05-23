@@ -2,6 +2,7 @@ package Week2;
 import java.io.*;
 import java.util.*;
 
+
 public class ReadingAndWriting {
     public static void main(String[] args) {
         String fileName = "practice.csv";
@@ -14,9 +15,9 @@ public class ReadingAndWriting {
             w1.write("John, Wick, 1");
             w1.newLine();
             w1.write("Jason, Bourne, 2");
+            w1.newLine();
             w1.write("Denzel, Washinton, 3");
-            readFromExcelSheet(fileName);
-
+            readFromExcelSheet("practice.csv");
 
 
 
@@ -28,7 +29,7 @@ public class ReadingAndWriting {
     public static void readFromExcelSheet(String fileName){
         try(Scanner input = new Scanner(new File(fileName))){
             System.out.println("Currently reading your file....");
-            while(input.hasNextLine()){
+            while(input.hasNextLine()){ 
                 String line = input.nextLine();
                 System.out.println(line);
 
