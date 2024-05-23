@@ -34,24 +34,10 @@ public class LabTwo {
         int userPrime = input.nextInt();
         if(isPrime(userPrime)){
             System.out.println("IS PRIME");
-        }else{System.out.println("NotPrime");
+        }else{System.out.println("Not Prime");
         }
          }
          System.out.println("Have a great day! :)");
-
-        // gives the middle of 3 given numbers
-        // middle3();
-        // gives the maximum of 3 given numbers
-        // max3();
-        // gives the minimum of 3 given numbers
-        // min3();
-        // demonstration of an xor method
-        // xor();
-        // check if a number is a factor of another
-        //isFactor(0, 0);
-        //isFactor(5, 10);
-        //int userInput = 6;
-        //Check if given number is prime
 
     }
     // method to determine the largest of three integers
