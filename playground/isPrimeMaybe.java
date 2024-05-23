@@ -1,37 +1,34 @@
 package playground;
 
+import java.util.Scanner;
+
 public class isPrimeMaybe {
-    static boolean isPrime(int n) 
-    { 
-        // Corner case 
-        if (n <= 1) 
-            return false; 
-  
-        // Check from 2 to n-1 
-        for (int i = 2; i < n; i++) 
-            if (n % i == 0) 
-                return false; 
-  
-        return true; 
-    } 
-  
-    // Driver Program 
-    public static void main(String args[]) 
-    { 
-        if (isPrime(11)) 
-            System.out.println(" true"); 
-        else
-            System.out.println(" false"); 
-        if (isPrime(15)) 
-            System.out.println(" true"); 
-        else
-            System.out.println(" false"); 
-    } 
-}
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number to check for prime");
+        int userPrime = input.nextInt();
+        if(isPrime(userPrime)){
+            System.out.println("IS PRIME");
+        }else{System.out.println("NotPrime");
+        }
+    public static boolean isPrime(int userInput){
+        //number less than or equal to 1 is not prime
+        if(userInput <= 1){
+            return false;
+        }
+      //iterates through and checks if factor  
+      for(int i = 2; i < userInput; i++){
+      if(isFactor(i,userInput)){
+        return false;
+      }
+      }
+      //if no factors are found, prime
+      return true;
+     }
+    }
 
 
-return true;
-}else{
-    return false;
+
+
+
 }
-}   
