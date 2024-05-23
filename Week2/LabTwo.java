@@ -153,6 +153,8 @@ public class LabTwo {
         }
         if(totalFactors == userInteger){
             System.out.println(userInteger + " is a perfect number!");
+        }else{
+            System.out.println(userInteger + " is not a perfect number!");
         }
     }
     //method which takes an integer and returns true if it is a prime number
