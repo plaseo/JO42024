@@ -10,7 +10,9 @@ public abstract class Vehicle {
     //an abstract method is like a contract that says every
     ///class that inherits from the abstract class should provide an implementation for said abstract method
     
-    abstract void driving();
+    public void driving(){
+        System.out.println("The vehicle is driving");
+    }
 
     
 }

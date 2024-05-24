@@ -32,5 +32,5 @@ public class RemoveLettersFromStr {
             
         }
         return result.toString();
-}
+    }
 }
