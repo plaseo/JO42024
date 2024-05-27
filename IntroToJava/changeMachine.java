@@ -1,5 +1,6 @@
 package IntroToJava;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class changeMachine {
@@ -8,18 +9,36 @@ public class changeMachine {
         double amountDue = (0);
         Scanner input = new Scanner(System.in);
 
-       //figure out how to capture multiple items to add them to subTotal
-       //System.out.println("Welcome to The Cash Reg, it's pretty basic around here");
-       //System.out.println("Enter t to adjust tax rate, e to exit");
-       //System.out.println("Please enter the cost of items one-by-one once finished enter 's' to subtotal")
-       //System.out.print(":");
-       //double tendered = (input.nextDouble());
+        //figure out how to capture multiple items to add them to subTotal
+        //System.out.println("Welcome to The Cash Reg, it's pretty basic around here");
+        //System.out.println("Enter t to adjust tax rate, e to exit");
+        //System.out.println("Please enter the cost of items one-by-one once finished enter 's' to subtotal")
+        //System.out.print(":");
+        //double item1 = (input.nextDouble());
+
+         //creates an array of doubles
+         Scanner subScanner = new Scanner(System.in);
+         ArrayList<Double> nums = new ArrayList<Double>();
+         //double doubles = input.nextDouble();
+         while (subScanner.hasNextDouble()) {
+            nums.add(input.nextDouble());
+            }
+            double sum = 0;
+            for (int i = 0; i < nums.size(); i++) {
+            sum += nums.get(i);
+            }
+            System.out.print(sum);
+            if(subScanner.hasNext("s")){
+                System.out.println("poop");
+                
+            }else{
+                System.out.println("maybe");
+            }
 
 
-        
-        
+
         //capture subtotal from input:
-        System.out.print("Enter Subtotal: ");
+        System.out.println("Enter Subtotal: ");
         double subTotal = (input.nextDouble());
         
         //Check if customer is taxExempt
@@ -52,7 +71,7 @@ public class changeMachine {
         double changeInPennies = tendPennies - duePennies; //figure out change in pennies
         //cast double change to integer
         int wholePennies = (int) changeInPennies;
-        
+
         //display dollars in changer
         int dollars = wholePennies / dollar;
         System.out.println("::::Customer Change:::: ");
