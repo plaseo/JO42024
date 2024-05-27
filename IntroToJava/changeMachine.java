@@ -96,5 +96,11 @@ public class changeMachine {
         int numPennies = change2 - (numNickels * nickel);
         System.out.println("    Pennies: " + numPennies);
 
+        // Subtotal 
+        // Tax 
+        // Total
+        // CASH TENDERED
+        // CHANGE DUE
+
     }
 }

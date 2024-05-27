@@ -1,0 +1,43 @@
+Method
+Description
+
+nextLine()
+Scans all input up to the line break as a String
+
+next()
+Scans the next token of the input as a String
+
+nextInt()
+Scans the next token of the input as an int
+
+nextDouble()
+Scans the next token of the input as a double
+
+nextBoolean()
+Scans the next token of the input as a boolean
+
+Postfix/Prefix increments
+
+System.out.println(count++);
+Print the current value of count, then add one to count
+Postfix
+
+System.out.println(++count);
+Add one to count, then print the new value
+Prefix
+
+x = y++;
+Copy the value of y into x, then add one to y
+Postfix
+
+x = ++y;
+Add one to y, then copy the value of y into x
+Prefix
+
+x = y- -;
+Copy the value of y into x, then subtract one from y
+Postfix
+
+x = - -y;
+Subtract one from y, then copy the value of y into x
+Prefix
