@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Arrays {
     public static void main(String[] args) {
         //first way of declaring an array
-        int[] ages = {23,56,78,90,56,40};
-        System.out.println(ages);
+
         // //declaring an array and specifying it's size, data points may not be known
         // String [] fruits = new String[5];
 

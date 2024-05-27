@@ -3,8 +3,8 @@ package IntroToJava;
 public class KioskChangeCalc {
 
 	public static void main(String[] args) {
-	double cashGiven = 18;
-	double totalSale = 17.19;
+	double cashGiven = 22;
+	double totalSale = 21.1;
 	
 	//call the function
 	returnChange(cashGiven, totalSale);
@@ -22,11 +22,11 @@ public class KioskChangeCalc {
     double penny = 0.01;
 	
     // round change to 2 decimal places and calculate
-    double change = ((double)((int) Math.round((cashGiven - totalSale)*100)) / 100.0 );
-    double modQuarters = ((double)((int) Math.round((change % quarter)*100)) / 100.0 );
-    double modDimes = ((double)((int) Math.round((modQuarters % dime)*100)) / 100.0 );
-    double modNickels = ((double)((int) Math.round((modQuarters % nickel)*100)) / 100.0 );
-    double modPennies = ((double)((int) Math.round((modQuarters % penny)*100)) / 100.0 );
+    double change = ((double)((int)((cashGiven - totalSale)*100)) / 100.0 );
+    double modQuarters = ((double)((int)((change % quarter)*100)) / 100.0 );
+    double modDimes = ((double)((int)((modQuarters % dime)*100)) / 100.0 );
+    double modNickels = ((double)((int)((modQuarters % nickel)*100)) / 100.0 );
+    double modPennies = ((double)((int)((modQuarters % penny)*100)) / 100.0 );
 	
     int numQuarters = (int)((change - modQuarters) / (quarter));
     int numDimes = (int)((modQuarters - modDimes) / (dime));

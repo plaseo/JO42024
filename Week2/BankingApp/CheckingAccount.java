@@ -12,8 +12,6 @@ public class CheckingAccount extends Account {
 
     }
     
-
-
     public double getOverDraftLimit(){
         return overDraftLimit;
     }
@@ -49,6 +47,5 @@ public class CheckingAccount extends Account {
         //unimplemented method
 
     }
-
 }
 
