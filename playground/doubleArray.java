@@ -9,7 +9,6 @@ public class doubleArray {
         //System.out.print("Enter line: ");
         ArrayList<Double> nums = new ArrayList<Double>();
         //double doubles = input.nextDouble();
-          
           while (input.hasNextDouble()) {
             nums.add(input.nextDouble());
             }
@@ -18,14 +17,17 @@ public class doubleArray {
             sum += nums.get(i);
             }
             System.out.println(sum);
+            
             if(input.hasNext("s")){
-                System.out.println("poop");
-            }
+                 System.out.println("poop");
+             }
+            
             if(input.hasNext("d")){
-                System.out.println("lol");
-            }if(input.hasNext("z")){
-                System.out.println("lolz");
+                 System.out.println("lol");
             }
+            //if(input.hasNext("z")){
+            //     System.out.println("lolz");
+            // }
 
 
 

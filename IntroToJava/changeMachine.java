@@ -1,48 +1,42 @@
 package IntroToJava;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class changeMachine {
     public static void main(String[] args) {
+        
         double taxRate = .07;
         double amountDue = (0);
         Scanner input = new Scanner(System.in);
 
         //figure out how to capture multiple items to add them to subTotal
-        //System.out.println("Welcome to The Cash Reg, it's pretty basic around here");
-        //System.out.println("Enter t to adjust tax rate, e to exit");
-        //System.out.println("Please enter the cost of items one-by-one once finished enter 's' to subtotal")
-        //System.out.print(":");
-        //double item1 = (input.nextDouble());
+        System.out.println("Welcome to The Cash Reg, it's pretty basic around here");
+        System.out.println("Enter t to adjust tax rate, e to exit");
+        System.out.println("Please enter the cost of items one-by-one once finished enter 's' to subtotal");
 
-         //creates an array of doubles
-         Scanner subScanner = new Scanner(System.in);
-         ArrayList<Double> nums = new ArrayList<Double>();
-         //double doubles = input.nextDouble();
-         while (subScanner.hasNextDouble()) {
-            nums.add(input.nextDouble());
+        ArrayList<Double> nums = new ArrayList<Double>();
+        Scanner subScanner = new Scanner(System.in);
+          while (subScanner.hasNextDouble()) {
+            nums.add(subScanner.nextDouble());
             }
-            double sum = 0;
+            double subTotal = 0;
             for (int i = 0; i < nums.size(); i++) {
-            sum += nums.get(i);
+            subTotal += nums.get(i);
             }
-            System.out.print(sum);
+            System.out.println("  Subtotal : " + subTotal);
+            
             if(subScanner.hasNext("s")){
-                System.out.println("poop");
-                
-            }else{
-                System.out.println("maybe");
+                 //System.out.println("poop");
+             }
+            
+            if(subScanner.hasNext("d")){
+                 System.out.println("lol");
             }
-
-
-
-        //capture subtotal from input:
-        System.out.println("Enter Subtotal: ");
-        double subTotal = (input.nextDouble());
-        
+ 
         //Check if customer is taxExempt
-        System.out.print("Is customer tax-exempt(true or false): ");
+        System.out.print("TaxExempt(true/false): ");
         boolean taxExempt = input.nextBoolean();
         double taxDue = 0;//figure out taxes due
         if(taxExempt == true){
@@ -53,7 +47,9 @@ public class changeMachine {
         System.out.println("        Tax: $" + taxDue);
 
         amountDue = subTotal + taxDue;
-        System.out.println(" Amount Due: " + amountDue);
+        DecimalFormat df = new DecimalFormat("###.##");
+        //System.out.println(df.format(PI));
+        System.out.println(" Amount Due: " + (df.format(amountDue)));
 
         //capture amount tendered from input:
         System.out.print("Enter amount tendered: ");
@@ -95,7 +91,7 @@ public class changeMachine {
         //calculate how much change after nickels which will give us number of pennies
         int numPennies = change2 - (numNickels * nickel);
         System.out.println("    Pennies: " + numPennies);
-
+        
         // Subtotal 
         // Tax 
         // Total
