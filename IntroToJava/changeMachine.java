@@ -8,15 +8,15 @@ public class changeMachine {
     public static void main(String[] args) {
         
         double taxRate = .07;
-        double amountDue = (0);
+        //double amountDue = (0);
         Scanner input = new Scanner(System.in);
 
         //figure out how to capture multiple items to add them to subTotal
         System.out.println("Welcome to The Cash Reg, it's pretty basic around here");
-        System.out.println("Enter t to adjust tax rate, e to exit");
+        System.out.println("Enter t to adjust tax rate, e to exit(not yet implemented)");
         System.out.println("Please enter the cost of items one-by-one once finished enter 's' to subtotal");
 
-        ArrayList<Double> nums = new ArrayList<Double>();
+        List<Double> nums = new ArrayList<Double>();
         Scanner subScanner = new Scanner(System.in);
           while (subScanner.hasNextDouble()) {
             nums.add(subScanner.nextDouble());
@@ -25,31 +25,35 @@ public class changeMachine {
             for (int i = 0; i < nums.size(); i++) {
             subTotal += nums.get(i);
             }
+            DecimalFormat df = new DecimalFormat("#.##");
+            subTotal = Double.valueOf(df.format(subTotal));
             System.out.println("  Subtotal : " + subTotal);
             
             if(subScanner.hasNext("s")){
-                 //System.out.println("poop");
+                System.out.println("Calculating");
+                System.out.println("...");
              }
             
-            if(subScanner.hasNext("d")){
+            if(subScanner.hasNext("e")){
                  System.out.println("lol");
             }
  
         //Check if customer is taxExempt
         System.out.print("TaxExempt(true/false): ");
         boolean taxExempt = input.nextBoolean();
-        double taxDue = 0;//figure out taxes due
+        double taxDue = 0;
         if(taxExempt == true){
             taxDue = 0;
         }else{
-            taxDue = subTotal * taxRate;
+            taxDue = subTotal * taxRate;//calculate out taxes due
         }
         System.out.println("        Tax: $" + taxDue);
 
+        
+        double amountDue = (0);
         amountDue = subTotal + taxDue;
-        DecimalFormat df = new DecimalFormat("###.##");
-        //System.out.println(df.format(PI));
-        System.out.println(" Amount Due: " + (df.format(amountDue)));
+        amountDue = Double.valueOf(df.format(amountDue));
+        System.out.println(" Amount Due: " + amountDue);
 
         //capture amount tendered from input:
         System.out.print("Enter amount tendered: ");
@@ -64,7 +68,7 @@ public class changeMachine {
         //calculate out how many pennies are in amountDue & tendered
         double duePennies = amountDue * 100;
         double tendPennies = tendered * 100;
-        double changeInPennies = tendPennies - duePennies; //figure out change in pennies
+        double changeInPennies = tendPennies - duePennies; //calculate out change in pennies
         //cast double change to integer
         int wholePennies = (int) changeInPennies;
 

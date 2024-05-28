@@ -41,3 +41,9 @@ Postfix
 x = - -y;
 Subtract one from y, then copy the value of y into x
 Prefix
+
+Big O Notation
+Big O is used to describe the performance and complexity of an algorithm
+Describes the Worst Case Scenario for your code, or how this program will run under the "worst" conditions
+
+
