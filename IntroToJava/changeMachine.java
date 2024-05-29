@@ -16,7 +16,7 @@ public class changeMachine {
         System.out.println("Enter t to adjust tax rate, e to exit(not yet implemented)");
         System.out.println("Please enter the cost of items one-by-one once finished enter 's' to subtotal");
 
-        List<Double> nums = new ArrayList<Double>();
+        ArrayList<Double> nums = new ArrayList<Double>();
         Scanner subScanner = new Scanner(System.in);
           while (subScanner.hasNextDouble()) {
             nums.add(subScanner.nextDouble());

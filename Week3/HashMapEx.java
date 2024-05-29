@@ -1,10 +1,11 @@
 package Week3;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class HashMapEx {
     public static void main(String[] args) {
         //dictionary/hashmap
-        HashMap<String, Integer> dictionary = new HashMap<>();
+        HashMap<String, Integer> dictionary = new LinkedHashMap<>();
         //adds a key-value pair to the HashMap
         dictionary.put("John", 1);
         dictionary.put("Michael", 2);
@@ -12,7 +13,7 @@ public class HashMapEx {
 
         //retrieves the value associatedwith the specified key
         System.out.println(dictionary.get("John"));
-        
+
 
     }
     
