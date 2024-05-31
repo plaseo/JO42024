@@ -4,8 +4,8 @@ import java.util.*;
 
 public class NonRepeating {
     public static void main(String[] args){
-        String userString = "morning";
-        int index = 0;
+        String userString = "mmorning";
+        //int index = 0;
         char someLetters = ' ';
        
             for (char i : userString.toCharArray()) {
@@ -14,7 +14,7 @@ public class NonRepeating {
                     break;
                 }
                 else {
-                    index += 1;
+                    i += 1;
                 }
             }
         System.out.println("NonRepeatingCharacter " + someLetters);

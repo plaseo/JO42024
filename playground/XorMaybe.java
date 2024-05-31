@@ -20,7 +20,7 @@ public class XorMaybe {
         if ((boolOne && !boolTwo) || (!boolOne && boolTwo)){
             System.out.println("True!");
         }else{
-            System.out.println("Drink some water!");
+            System.out.println("Drink some water! (also false");
         }
         //I tried to do a return statement here but it then doesn't let me print the output! Maybe teacher can help me ;)
         //return (boolOne && !boolTwo) || (!boolOne && boolTwo);
