@@ -19,5 +19,11 @@
     transition: filter 2s;
  }
 
+ div.w {
+   max-width: 480px;
+   margin: auto;
+   border: 3px solid #73AD21;
+ }
+
 
 

@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../TeacherRepo"
+		},
+		{
+			"path": "../WhatTheFlexbox"
 		}
 	],
 	"settings": {
@@ -12,6 +18,7 @@
 		"java.project.sourcePaths": [
 			"."
 		],
-		"java.project.referencedLibraries": []
+		"java.project.referencedLibraries": [],
+		"liveServer.settings.multiRootWorkspaceName": "WhatTheFlexbox"
 	}
 }
