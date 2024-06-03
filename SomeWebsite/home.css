@@ -1,10 +1,9 @@
 ul {
     display: flex;
-    flex-wrap: wrap;
   }
   
   li {
-    height: 40vh;
+    height: 10vh;
     flex-grow: 1;
   }
   
@@ -13,4 +12,12 @@ ul {
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+  }
+
+  .container   {
+    display:flex;
+    border:5px groove forestgreen;
+    max-height:500px;
+    flex-direction: row
+    /* flex-wrap:wrap; */
   }
