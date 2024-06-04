@@ -81,4 +81,72 @@ String - used to declare a variable of type String which is a sequence of charac
 System.out.print() - used to print output to the user
 System.out.println() - used to print output followed by a newline to the user
 = - used for assignment to a variable
-+, -, *, /, % - aritmetic operator
++, -, *, /, % - arithmetic operator
+
+
+Java Object Oriented Programming
+-Java groups the data attributes and behavoirs (aka methods) that use them together into objects
+-Objects are created from a class definition, objects are instances of a class
+
+Turtle, Turtle! 
+Class=Turtle
+Objects within the class=Yurtle
+A class is a classification or blueprint
+Yurtle is an object that has data about itself known as attributes (position, color, visibility, shell color etc)
+The turtle class also defines what turtle objects can do using methods like left/right etc, methods are often used to change attributes
+The . operator (.) is used to run an object's method such as moving Yurtle forward
+You can create as many objects as you need from one class
+
+Constructors
+A class defines the data(attributes) and behavior(methods) of a set of similar objects
+Each class has a special type of method (constructor) that is used to initialize the attributes in a newly created object
+A new object is created with the 'new' keyword followed by a class name. 
+Example: new World() - calls the World constructor to initialize a new object of the World class
+Example new Turtle(world) - calls the Turtle constructor to initialize the attributes of a new Turtle object in World
+// To create a new object and call a constructor write:
+// ClassName variableName = new ClassName(parameters);
+World world = new World();    // create a new World object
+Turtle t = new Turtle(world); // create a new Turtle object
+In Java, formal parameters are variables that act as value placeholders that you define for a method
+
+When you place values between the parentheses of a method call, the values get copied into the formal parameter variables
+The values placed between the parentheses of a method call are call arguments or actual parameters
+World world1 = new World();        // creates a 640x480 world
+World world2 = new World(300,400); // creates a 300x400 world
+
+The first constructor places the turtle in a default location in the middle of the world. 
+The second constructor places the turtle at a certain (x,y) location in the world.
+World world = new World();
+Turtle t1 = new Turtle(world);           //place in center of world
+Turtle t2 = new Turtle(50, 100, world);  //place at 50, 100
+Note
+The order of the argument values matter. The Turtle constructor takes (x,y,world) as parameters in that order.
+This is one reason why programming languages have data types – to allow for error-checking.
+
+Object Variables and References
+An object is created when you call a constructor
+You need to declare an object variable to reference the newly created object
+An object variable has a type that is a class, rather than a primitive such as int, double or boolean
+Turtle t1 and World world are both object variable declarations(classes, not primitive)
+Assign an object variable by calling a constructor on the right hand side of an equal sign
+Example: World world = new World(); or Turtle t1 = new Turtle(world);
+
+2.2.5 Summary
+Constructors initialize the attributes of newly created objects, they have the same name as the class
+A constructor signature is the constructor name followed by the parameter list
+     which is a list of the types of the parameters and the variable names used ot reger to them in the constructor
+Overloading is when there is more than one constructor. They must differe in the number, type or order of parameters
+New is a keyword that is used to create a new object of a class eg new ClassName()
+    creates a new object of the specified class and calls a constructor
+A no-argument constructor is a constructor that doesn't take any passed in values(arguments)
+Parameters allow the values to be passed to the constructor to initialize the newly created object
+The parameter list, in the header of a constructor, is a list of the type of the value being passed and a variable name.
+    These variables are called the formal parameters
+Actual parameters are the values being passed to a constructor. The formal parameters are set to a copy of the value of actual parameters
+Formal parameters are the specificcation of the parameters int eh constructor header
+    World(int width, int height)
+Call by value mean that when you pass a value to a constructor or method is passes a copy of the value 
+
+Methods - set of instructions that define the behavoirs for objects of the class
+Dot notation - execute an object's method. Objects name followed by a (.) operator then the method name and ()
+    eg object.method();
