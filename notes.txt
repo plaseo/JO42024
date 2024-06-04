@@ -150,3 +150,61 @@ Call by value mean that when you pass a value to a constructor or method is pass
 Methods - set of instructions that define the behavoirs for objects of the class
 Dot notation - execute an object's method. Objects name followed by a (.) operator then the method name and ()
     eg object.method();
+
+    ================================================================================
+    Methods 
+    ================================================================================
+    - an object's behaviors or functions that can be used or called to do it's job
+    
+    ================================================================================
+    Arguments or actual parameters
+    ================================================================================
+    -the values or data passed to an object's method
+    
+    ================================================================================
+    formal parameters
+    ================================================================================
+    -the variables in a method's definition that hold the arguments 
+    
+    ================================================================================
+    method call
+    ================================================================================ 
+    -asking to run the method
+
+    Strings in java are objects of the String class that hold sequences of characters (a, b, c, %,$,)
+    Remember that a class in Java defines the data that all object of the class have
+    In Java there are two ways to create an object of the String class:
+    String greeting = ("Hello")
+
+=================================================================================================================================
+    public class Test2
+{
+   public static void main(String[] args)
+   {
+     String greeting = "Hello";
+     Class currClass = greeting.getClass();
+     System.out.println(currClass);
+     Class parentClass = currClass.getSuperclass();
+     System.out.println(parentClass);
+   }
+}
+
+OUTPUT: 
+class java.lang.String
+class java.lang.Object
+
+The above code prints class java.lang.String as greeting was created by the String class
+The full name for the String class is java.lang.String
+The java.lang part is the package name
+Every class in Java language is in a package and the standard classes like String are in the java.lang package
+Every object in Java knows the class that created it
+Every class in Java knows it's parent class (a class can have a parent class, but only ONE)
+A class can inherit object fields and methods from a parent class
+The fourth line will print class java.lang.Object because the parent class(superclass) of the String class is the object class
+
+=================================================================================================================================
+
+String Operators - Concatenation
+
+
+    
