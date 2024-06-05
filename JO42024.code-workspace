@@ -20,6 +20,7 @@
 		],
 		"java.project.referencedLibraries": [],
 		"liveServer.settings.multiRootWorkspaceName": "JO42024",
-		"java.compile.nullAnalysis.mode": "automatic"
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "interactive"
 	}
 }
