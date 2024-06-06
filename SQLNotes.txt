@@ -1,0 +1,22 @@
+Data 
+Data is a collection of a distinct unit of info
+Data is used in a variety of forms of text, numbers, media and many more
+Talking in terms of computing, data is basically info that can be translated
+Examples: name, age, weight, height etc etc
+
+Database
+Organized collection of structured data to make it accessible, manageable updatable 
+A place where data is stored
+
+Database Examples
+Computerized library systems
+ATMs 
+Flight reservation systems
+Social media
+E-commerce
+Personal cloud storage
+
+A database is made up of tables, each table has it's own columns with fields/values
+
+
+

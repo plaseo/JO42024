@@ -33,9 +33,14 @@ public class changeMachine {
                 System.out.println("Calculating");
                 System.out.println("...");
              }
-            
+            if(subScanner.hasNext("t")){
+                System.out.print("Enter amount tendered: ");
+                double tendered = (input.nextDouble());
+
+
+            }
             if(subScanner.hasNext("e")){
-                 System.out.println("lol");
+                System.exit(0);
             }
  
         //Check if customer is taxExempt
@@ -69,7 +74,7 @@ public class changeMachine {
         double duePennies = amountDue * 100;
         double tendPennies = tendered * 100;
         double changeInPennies = tendPennies - duePennies; //calculate out change in pennies
-        //cast double change to integer
+        //cast double change to integer, thus throwing away fractions of pennies ¯\_(ツ)_/¯
         int wholePennies = (int) changeInPennies;
 
         //display dollars in changer

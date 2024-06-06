@@ -21,6 +21,21 @@
 		"java.project.referencedLibraries": [],
 		"liveServer.settings.multiRootWorkspaceName": "JO42024",
 		"java.compile.nullAnalysis.mode": "automatic",
-		"java.configuration.updateBuildConfiguration": "interactive"
+		"java.configuration.updateBuildConfiguration": "interactive",
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default",
+					"enableSsl": "Disabled"
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 3306,
+				"driver": "MySQL",
+				"name": "mysqlconnection",
+				"database": "sys",
+				"username": "root"
+			}
+		]
 	}
 }
