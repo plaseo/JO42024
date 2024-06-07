@@ -1,0 +1,94 @@
+Data 
+Data is a collection of a distinct unit of info
+Data is used in a variety of forms of text, numbers, media and many more
+Talking in terms of computing, data is basically info that can be translated
+Examples: name, age, weight, height etc etc
+
+Database
+Organized collection of structured data to make it accessible, manageable updatable 
+A place where data is stored
+
+Database Examples
+Computerized library systems
+ATMs 
+Flight reservation systems
+Social media
+E-commerce
+Personal cloud storage
+
+A database is made up of tables, each table has it's own columns with fields/values
+
+SQL is structured query language
+
+Allows to access in the relational database management systemts
+Allows users to describe data
+Allows users to define teh data in a database and manipulate data
+Embed within other languages using SQL modules, libraries and pre-compilers
+Create and drop databases and tables
+Allows users to create view, stored procedure, functions in a database
+Allows users to set permissions on tables, procedures and views
+
+Data Definition Language DDL
+CREATE - Create new table, a view of a table or other object in the database
+ALTER - Modify an existing database object such as a table
+DROP - Delete an entire table, a view of a table or other objectws in the database
+SELECT 
+INSERT 
+UPDATE 
+DELETE
+
+
+
+Relationships in SQL – One-to-One, One-to-Many, Many-to-Many.
+Relationships in SQL tables define how tables are connected to one another.
+Building Relationships in tables helps to organize and link data across multiple tables 
+Relationships are established using foreign keys
+foreign key = column in a table that refer to the primary key in another table 
+Relationships help organize and structure data 
+Types of relationhips in SQL: 
+- One-to-One
+- One-to-Many
+- Many-to-Many
+-Self-referencing 
+
+One-to-One Relationship exmaple:
+The below creates two tables, one for users and one for user_profiles
+The user_id from table users becomes the foreign key in the table user_profiles
+CREATE TABLE users (
+    user_id INT PRIMARY KEY,
+    username VARCHAR(50));
+CREATE TABLE user_profiles (
+    profile_id INT PRIMARY KEY,
+    user_id INT UNIQUE,
+    profile_data VARCHAR(255),
+    FOREIGN KEY (user_id) REFERENCES users(user_id));
+
+One-to-Many Relationship example:
+The below creates two tables, one for departments and one for employees
+Each record in departments can be associate with multiple employees
+Each employee is associated with only one record in departments
+CREATE TABLE departments (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(50));
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_name VARCHAR(50),
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES departments(department_id));
+
+Many-to-Many Relationship example:
+the below creates three tables, one for students, one for courses and one for student_courses
+Each record can be associated with multiple records from each table and vise-versa
+Students can enroll in multiple courses and each course can have multiple students 
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(50));
+CREATE TABLE courses (
+    course_id INT PRIMARY KEY,
+    course_name VARCHAR(50));
+CREATE TABLE student_courses (
+    student_id INT,
+    course_id INT,
+    PRIMARY KEY (student_id, course_id),
+    FOREIGN KEY (student_id) REFERENCES students(student_id),
+    FOREIGN KEY (course_id) REFERENCES courses(course_id));
