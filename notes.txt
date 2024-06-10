@@ -1,4 +1,4 @@
-Method
+	Method
 Description
 
 nextLine()
@@ -206,5 +206,27 @@ The fourth line will print class java.lang.Object because the parent class(super
 
 String Operators - Concatenation
 
+
+=================================================================================================================================
+Comparison Operators
+    > greater than
+    >= greater than or equal to
+    < less than
+    <= less than or equal to
+    == equal to
+    != not equal to
+=================================================================================================================================
+Logical Operators
+&& = Logical and, Returns true if both statements are true
+|| = Logical or. Returns true if one of the statements is true
+!  = Logical not. Reverse the result, returns false if the result is true
+=================================================================================================================================
+Logical Operators Table
+num=num > 0=num < 10=num > 0 && num < 10=!(num > 0 && num < 10)=num > 0 || num < 10
+-1==false===true=====false===============true===================true
+0===false===true=====false===============true===================true
+1===true====true=====true================false==================true
+9===true====true=====true	================false==================true
+10==true====false====false===============true===================true
 
     
