@@ -39,6 +39,17 @@
 				"database": "sys",
 				"username": "root"
 			}
+		],
+		"cSpell.words": [
+			"dateof",
+			"dateofbirth",
+			"firstname",
+			"gradelevel",
+			"lastname",
+			"officename",
+			"orangebook",
+			"phonenumber",
+			"Studentepository"
 		]
 	}
 }
