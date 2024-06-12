@@ -19,7 +19,8 @@
 			"**/.odt": true
 		},
 		"java.project.sourcePaths": [
-			"."
+			"Week2",
+			""
 		],
 		"java.project.referencedLibraries": [],
 		"liveServer.settings.multiRootWorkspaceName": "JO42024",
