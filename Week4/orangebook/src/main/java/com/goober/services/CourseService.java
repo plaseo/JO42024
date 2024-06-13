@@ -24,6 +24,10 @@ public class CourseService {
     @Autowired
     private CourseRepository courseRepository;
 
+    // public CourseService (CourseRepository courseRepository){
+    //     this.courseRepository = courseRepository;
+    // }
+
 
     public List<Course> findAllCourses(){
 

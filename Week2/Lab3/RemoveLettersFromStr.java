@@ -1,4 +1,5 @@
-package Week2;
+package Lab3;
+
 
 public class RemoveLettersFromStr {
     public static void main(String[] args){

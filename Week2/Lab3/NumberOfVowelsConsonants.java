@@ -1,6 +1,7 @@
-package Week2;
+package Lab3;
+// package Week2;
 //Write a method to count the number of vowels and consonants in a string. E.g. if the input is Java the result should be 2 vowels and 2 consonants
-public class RemoveDuplicates2 {
+public class NumberOfVowelsConsonants {
     public static int[] countVowels(String vowAndCons){
         
         int numberOfVowels = 0;

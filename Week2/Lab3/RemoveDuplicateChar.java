@@ -1,4 +1,5 @@
-package Week2;
+package Lab3;
+// package Week2;
 
 // Write a method to remove duplicate characters from a string.
 public class RemoveDuplicateChar {
