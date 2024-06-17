@@ -50,7 +50,7 @@ public class StudentController {
         // //i call my list of students and add the student to the list
         // students.add(student);
 
-        return "courses";
+        return "redirect/courses";
 
     }
 
@@ -62,6 +62,26 @@ public class StudentController {
     //     return "students";
 
     // }
+
+    @GetMapping("/signin")
+    public String signIn(){
+        return "signin";
+
+    }
+
+    @PostMapping("/signin")
+    public String submitSignIn(@ModelAttribute Student student){
+        try{
+            Student loggedinStuedent = studentService.signIn(student);
+            return "home";
+        }
+        catch(Exception e){
+            return "signin";
+        }
+
+    }
+
+
    
 
    
