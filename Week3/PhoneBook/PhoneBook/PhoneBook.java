@@ -10,6 +10,8 @@ public class PhoneBook {
         //Person person = new Person("Bob", "Smith", "Stu", null, "85858585858");
         char quit = 'y';
         String fN, lN, mN;
+        // Person Bob = new Person(mN, fN, lN, null, mN);
+        // Address addy = new Address(quit, mN, fN, lN, mN)=    
         List<Person> phonebook = new ArrayList<>();
         while (quit == 'y'){
             System.out.print("Firstname: ");
@@ -22,7 +24,7 @@ public class PhoneBook {
             quit = word.charAt(0);
 
         }
-        System.out.println(phonebook.toString());
+        System.out.println(phonebook);
 
         
         //phonebook.add(person);

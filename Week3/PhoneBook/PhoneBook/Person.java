@@ -57,7 +57,7 @@ public class Person {
     }
     @Override
     public String toString() {
-        return "PB Entry [last=" + lastName + " first=" + firstName + " middle=" + middleName + " address=" + address +  " phone" + phoneNumber + "]";
+        return "PB Entry [last=" + lastName + " first=" + firstName + " middle=" + middleName + " address=" + address +  " phone" + phoneNumber + "\n" + "]";
     }
 
     // private String firstName;
