@@ -100,7 +100,7 @@ public class changeMachine {
         //calculate how much change after nickels which will give us number of pennies
         int numPennies = change2 - (numNickels * nickel);
         System.out.println("    Pennies: " + numPennies);
-        
+        //ITEMS
         // Subtotal 
         // Tax 
         // Total

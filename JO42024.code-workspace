@@ -16,7 +16,8 @@
 			"**/.odt": true
 		},
 		"java.project.sourcePaths": [
-			""
+			"Week3/PhoneBook",
+			"playground/ArrayPractice"
 		],
 		"java.project.referencedLibraries": [],
 		"liveServer.settings.multiRootWorkspaceName": "JO42024",
