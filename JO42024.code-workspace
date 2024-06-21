@@ -16,8 +16,10 @@
 			"**/.odt": true
 		},
 		"java.project.sourcePaths": [
+			"playground/PlayGroundTwoTheRemix",
+			"playground/ArrayPractice",
 			"Week3/PhoneBook",
-			"playground/ArrayPractice"
+			"playground"
 		],
 		"java.project.referencedLibraries": [],
 		"liveServer.settings.multiRootWorkspaceName": "JO42024",

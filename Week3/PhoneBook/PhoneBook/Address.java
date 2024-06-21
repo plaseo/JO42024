@@ -1,14 +1,14 @@
 package PhoneBook;
 
 public class Address {
-    private int buildingNumber;
+    private String buildingNumber;
     private String streetName;
     private String city;
     private String state;
     private String zipCode;
 
     //constructor
-    public Address(int buildingNumber, String streetName, String city, String state, String zipCode) {
+    public Address(String buildingNumber, String streetName, String city, String state, String zipCode) {
         this.buildingNumber = buildingNumber;
         this.streetName = streetName;
         this.city = city;
@@ -17,10 +17,10 @@ public class Address {
     }
 
     //getters and setters
-    public int getBuildingNumber() {
+    public String getBuildingNumber() {
         return buildingNumber;
     }
-    public void setBuildingNumber(int buildingNumber) {
+    public void setBuildingNumber(String buildingNumber) {
         this.buildingNumber = buildingNumber;
     }
     public String getStreetName() {
@@ -46,6 +46,10 @@ public class Address {
     }
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
+    }
+    @Override
+    public String toString() {
+        return "Address:" + buildingNumber + " " + streetName + " City:" +  city + " State:" + state + " Zip:" + zipCode;
     }
 
     

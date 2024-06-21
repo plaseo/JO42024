@@ -1,43 +1,57 @@
 package PhoneBook;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class PhoneBook {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Create a new phonebook entry");
-        //Person person = new Person("Bob", "Smith", "Stu", null, "85858585858");
-        char quit = 'y';
-        String fN, lN, mN;
-        // Person Bob = new Person(mN, fN, lN, null, mN);
-        // Address addy = new Address(quit, mN, fN, lN, mN)=    
+
         List<Person> phonebook = new ArrayList<>();
+        
+        String fN, lN, mN, pN, bN, sN, cN, sT, zC;
+        char quit = 'y';
         while (quit == 'y'){
             System.out.print("Firstname: ");
             fN = input.next();
             System.out.print("Last Name: ");
             lN = input.next();
-            phonebook.add (new Person(fN, lN, null, null, null));
-            System.out.println("Enter another record? y/n:");
+            System.out.print("Middle Name: ");
+            mN = input.next();
+            System.out.print("Phone Number: ");
+            pN = input.next();
+            System.out.print("Building Number: ");
+            bN = input.next();
+            System.out.print("Street Name: ");
+            sN = input.next();
+            System.out.print("City: ");
+            cN = input.next();
+            System.out.print("State: ");
+            sT = input.next();
+            System.out.print("Zip Code: ");
+            zC = input.next();
+            Address addy = new Address (bN, sN, cN, sT, zC);
+            phonebook.add (new Person(fN, lN, mN, addy, pN));
+            System.out.print("Enter another record? y/n:");
             String word = input.next();
             quit = word.charAt(0);
+        }
+        System.out.print(phonebook);
+
+        List<String> aStringz = new ArrayList<>(phonebook.size());
+        for(Object obj : phonebook){
+            aStringz.add(Objects.toString(obj, null));
+        }
+        
+        for (String arrayToString : aStringz){
+            if (arrayToString.contains("Bo")){
+                  System.out.println(arrayToString);
+                  
+            }
 
         }
-        System.out.println(phonebook);
-
-        
-        //phonebook.add(person);
-        // School school = new School();
-        // List<Student> studentArray = new ArrayList<>();
-        // studentArray.add(s1);
-        // school.addStudent(s1);
-        // studentArray.add(s2);
-        // school.addStudent(s2);
-
+    
     }
-    
-    
-
-    
 }

@@ -1,12 +1,12 @@
 package Week3;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
+import java.util.;
+import java.util.Linked;
 
-public class HashMapEx {
+public class Ex {
     public static void main(String[] args) {
-        //dictionary/hashmap
-        HashMap<String, Integer> dictionary = new LinkedHashMap<>();
-        //adds a key-value pair to the HashMap
+        //dictionary/
+        <String, Integer> dictionary = new Linked<>();
+        //adds a key-value pair to the 
         dictionary.put("John", 1);
         dictionary.put("Michael", 2);
         dictionary.put("Sarah", 3);

@@ -55,10 +55,15 @@ public class Person {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+    public Object contains(String string) {
+        throw new UnsupportedOperationException("Unimplemented method 'contains'");
+    }
     @Override
     public String toString() {
-        return "PB Entry [last=" + lastName + " first=" + firstName + " middle=" + middleName + " address=" + address +  " phone" + phoneNumber + "\n" + "]";
+        return "PB Entry last:" + lastName + " first:" + firstName + " middle:" + middleName + " " + address +  " phone:" + phoneNumber + "\n";
     }
+
+    
 
     // private String firstName;
     // private String lastName;
