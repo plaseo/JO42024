@@ -10,7 +10,11 @@ public class PhoneBook {
         System.out.println("Create a new phonebook entry");
 
         List<Person> phonebook = new ArrayList<>();
-        
+        //John Doe, 114 Market St, St Louis, MO, 63403, 6366435698
+        String value = input.next();
+        String[] conversion = value.spli
+        System.out.println(conversion.toString());
+        //Person newPerson = new Person(null, null, null, null, null);
         String fN, lN, mN, pN, bN, sN, cN, sT, zC;
         char quit = 'y';
         while (quit == 'y'){
@@ -38,20 +42,26 @@ public class PhoneBook {
             String word = input.next();
             quit = word.charAt(0);
         }
-        System.out.print(phonebook);
-
+        //System.out.print(phonebook);
         List<String> aStringz = new ArrayList<>(phonebook.size());
         for(Object obj : phonebook){
             aStringz.add(Objects.toString(obj, null));
         }
         
         for (String arrayToString : aStringz){
-            if (arrayToString.contains("Bo")){
+            if (arrayToString.contains("Bob")){
                   System.out.println(arrayToString);
-                  
+            }else{System.out.println("Entry Not Found");
             }
+            
 
         }
+        
+
+        
     
     }
+        
+      
+        
 }
