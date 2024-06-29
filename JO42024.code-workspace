@@ -50,6 +50,7 @@
 			"orangebook",
 			"phonenumber",
 			"Studentepository"
-		]
+		],
+		"liveServer.settings.port": 5501
 	}
 }
