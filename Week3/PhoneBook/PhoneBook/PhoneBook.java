@@ -10,9 +10,8 @@ public class PhoneBook {
         System.out.println("Create a new phonebook entry");
 
         List<Person> phonebook = new ArrayList<>();
-        //John Doe, 114 Market St, St Louis, MO, 63403, 6366435698
-        String value = input.next();
-        String[] conversion = value.split
+        
+
         System.out.println(conversion.toString());
         //Person newPerson = new Person(null, null, null, null, null);
         String fN, lN, mN, pN, bN, sN, cN, sT, zC;
@@ -42,6 +41,7 @@ public class PhoneBook {
             String word = input.next();
             quit = word.charAt(0);
         }
+        
         //System.out.print(phonebook);
         List<String> aStringz = new ArrayList<>(phonebook.size());
         for(Object obj : phonebook){
@@ -62,10 +62,12 @@ public class PhoneBook {
     
     }
 
-    // String fullname = "Robert King";
-    // String[] names = fullname.split(" ", 1); // "1" means stop splitting after one space
+    // String splitIntoObject = "Firstname LastName";
+    // String[] names = fullname.split(" ", 1); 
     // String firstName = names[0];
     // String lastName = names[1];
+
+    // "1" means stop splitting after one space
         
       
         
